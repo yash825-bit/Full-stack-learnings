@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>counters in css</title>
+    <style>
+      body {
+        counter-reset: line;
+      }
+      h2::before {
+        counter-increment: line;
+        content: "line " counter(line) ":- ";
+      }
+    </style>
+  </head>
+  <bodyt>
+    <h1>CSS counters</h1>
+
+    <h2>hello, there</h2>
+    <h2>these are the texts to</h2>
+    <h2>understand the</h2>
+    <h2>the role of</h2>
+    <h2>counters in css</h2>
+    <h2>and counters are like the variable given to an element in css</h2>
+    <h2>
+      and the values of these variable can be incremented using css properties
+    </h2>
+    <h2>
+      the difference between counter and a list is that list counters are fixed
+      for a html structure
+    </h2>
+    <h2>
+      but counters can be applied to any element regardless of its structure.
+    </h2>
+  </bodyt>
+</html>

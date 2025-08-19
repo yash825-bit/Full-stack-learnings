@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nestedCounters</title>
+    <style>
+      body {
+        counter-reset: Section;
+        background-color: whitesmoke;
+      }
+      h1 {
+        counter-reset: subsection;
+      }
+      h2 {
+        counter-reset: subsubsection;
+      }
+      h1::before {
+        counter-increment: Section;
+        content: "Section " counter(Section) " : ";
+      }
+      h2::before {
+        counter-increment: subsection;
+        content: counter(Section) "." counter(subsection) " ";
+      }
+      h3::before {
+        counter-increment: subsubsection;
+        content: counter(Section) "." counter(subsection) "."
+          counter(subsubsection) " ";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Frontend Technologies</h1>
+    <h2>Html(for structure)</h2>
+    <h2>CSS(for styling)</h2>
+    <h3>bootstrap</h3>
+    <h3>tailwind</h3>
+    <h2>JavaScript(for functionality)</h2>
+    <h3>React</h3>
+    <h1>Backend Technologies</h1>
+    <h2>For JavaScript</h2>
+    <h3>node js</h3>
+    <h3>express js</h3>
+    <h2>For Python</h2>
+    <h3>Django and,</h3>
+    <h3>Flask</h3>
+    <h2>For Java</h2>
+    <h3>Spring,</h3>
+    <h3>SpringBoot and</h3>
+    <h3>Spring security</h3>
+  </body>
+</html>
