@@ -1,0 +1,11 @@
+User name, Email*, Password*, Confirm Password*, Contact no, Home_address, save button, forgot button and reset button (write down the complete HTML code for the same while fields having* are mandatory to fill).
+translation in CSS.
+get uses url() section for data transfer.{
+    1. get is insecure due to url section.
+    2. the data is shown on the top of the web page in the url section
+    3. from server --> client
+}
+post uses http protocol to transfering the data.{
+    1. transfer data securely without revealing the data.
+    2. from client --> server.
+}
