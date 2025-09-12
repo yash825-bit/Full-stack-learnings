@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .outerCircle {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-image: -webkit-radial-gradient(red, yellow, red);
+        transform-origin: center 225px;
+      }
+      .innerCircle {
+        position: absolute;
+        left: 100px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-image: -webkit-radial-gradient(blue, green, blue);
+        transform-origin: center 225px;
+        animation-name: rotation;
+        animation: rotation 5s linear infinite;
+      }
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(350deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outerCircle"></div>
+    <div class="innerCircle"></div>
+  </body>
+</html>

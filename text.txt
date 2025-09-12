@@ -1,0 +1,15 @@
+Attributes -->
+1. text
+2. name
+3. value
+4. class 
+5. ID
+6. auto-complete
+7. auto-focus
+8. reuire
+9. pattern
+10.select
+11.disabled
+12.hidden
+13.data-list
+14.placeholder
